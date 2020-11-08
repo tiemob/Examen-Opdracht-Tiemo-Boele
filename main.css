@@ -1,0 +1,807 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+header img {
+    height: 180px;
+
+}
+
+#toggle {
+    display: none;
+
+}
+
+
+label {
+    display: none;
+    width: 10%;
+}
+
+nav {
+
+
+
+    text-align: right;
+    height: 70px;
+
+    top: 0;
+    background-color: white;
+
+}
+
+nav ul {
+    font-size: 25px;
+    list-style-type: none;
+
+}
+
+nav li {
+    float: left;
+    width: 20%;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+
+
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.ReasonsT {
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding-left: 20px;
+}
+
+.ProductSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    float: left;
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding-left: 20px;
+}
+
+.ProductSection .figure {
+    float: right;
+
+}
+
+.ProductSection .a {
+    text-decoration: none;
+}
+
+.ProductSection p,
+.ProductSection p,
+.ProductSection p {
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 20px;
+    word-spacing: 2px;
+    text-indent: 2px;
+
+}
+
+aside {
+    width: 30%;
+    float: left;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+.ProductSection .Product a {
+    text-decoration: none;
+    color: #03925e;
+}
+
+.ProductSection .Product a:hover {
+    text-decoration: none;
+    color: skyblue;
+}
+
+
+
+
+.SolarGrid
+{
+    width: 100%;
+    float: left;
+    
+   
+}
+
+.sectionArticle {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "Two One Three"
+        "Two One Three"
+        "Five One Three"
+        "Five One Four"
+        "Five One Four"
+        "Five One Four"
+        "Five Six Six";
+    grid-gap: 5px;
+    background-color: black;
+
+
+}
+
+.articleOneSolar {
+    grid-area: One;
+    background-color: Green;
+    color: white;
+    padding: 10px;
+
+}
+
+.articleTwoSolar {
+    grid-area: Two;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.articleThreeSolar {
+    grid-area: Three;
+    padding: 10px;
+    background-color: red;
+    color: white;
+
+}
+
+.articleFourSolar {
+    grid-area: Four;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color: white;
+}
+
+.articleFiveSolar {
+    grid-area: Five;
+    background-color: #707070;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, Blue, red);
+    color: white;
+}
+
+.articleSixSolar {
+    grid-area: Six;
+    background-color: #EAEAEB;
+    padding: 10px;
+    background-image: linear-gradient(to bottom left, red, yellow);
+    color: white;
+}
+
+
+
+
+.AsideProduct1 {
+    padding-left: 1%;
+    width: 30%;
+    float: left;
+
+}
+
+.AsideProduct2 {
+    width: 30%;
+    float: right;
+
+}
+
+.AsideProduct3 {
+    width: 30%;
+    float: right;
+
+}
+
+.Products {
+    width: 100%;
+}
+
+
+.AsideProduct1 img {
+
+    width: 60%;
+
+}
+
+.AsideProduct2 img {
+
+    width: 60%;
+
+}
+
+.AsideProduct3 img {
+
+    width: 60%;
+
+}
+
+
+
+
+
+
+
+
+.Article {
+    float: right;
+    height: 150px;
+    width: 250px;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    margin-top: -150px;
+}
+
+
+
+#Footer {}
+
+footer #Copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 75%;
+
+    background-color: black;
+    color: white;
+}
+
+footer #cookies {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 50%;
+    background-color: #FA0;
+    z-index: 999;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+
+}
+
+table
+{
+    border-collapse: collapse;
+   width: 60%
+}
+
+
+table , th 
+{
+ 
+    border: 1px solid black;  
+}
+td
+{
+      border: 1px dashed  red;
+     
+}
+
+tbody>tr>:nth-child(1){
+ color:white;
+ 
+ text-align:center;
+    background-color: black;
+}
+
+
+
+table.SolarInfo
+{
+ margin-left: auto;
+  margin-right: auto;
+    float: left;
+}
+
+.EuAside1
+{
+    padding: 10px;
+    width: 30%;
+}
+
+.EuAside2
+{
+     padding: 10px;
+    width: 30%;
+}
+.EuAside3
+{
+     padding: 10px;
+    width: 30%;
+    
+    
+    
+     
+
+ 
+}
+
+.EuAside1 img
+{
+    padding: 10px;
+    width: 50%;
+    border-image:  linear-gradient(to bottom left, red, yellow);
+}
+
+.EuAside2 img
+{
+     padding: 10px;
+    width: 50%;
+    border-image:  linear-gradient(to bottom left, red, yellow);
+}
+.EuAside3 img
+{
+    
+     padding: 10px;
+    width: 50%;
+   border-image:  linear-gradient(to bottom left, red, yellow);
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1180px) {
+
+
+
+    body {
+        max-width: 100%;
+        font-size: 90%;
+    }
+
+    header {
+        text-align: center;
+        width: 100%;
+    }
+
+    header img {
+        height: 100px;
+
+    }
+
+    header h1,
+    header h2 {
+        font-size: 100%;
+    }
+
+    .Reasons {
+        display: none;
+    }
+
+    .ReasonsT {
+        display: flex;
+    }
+
+
+    nav li {
+        float: left;
+        width: auto;
+        font-size: 15px;
+        padding-left: 10px;
+
+    }
+
+    .Videoplayer video {
+        width: 100%;
+
+    }
+
+
+    .ProductSection {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+
+
+    }
+
+    .ProductSection .figure {
+        float: left;
+        width: 20%;
+
+    }
+
+    .ProductSection .figure .a {
+        text-align: center;
+    }
+
+    .ProductSection .figure .a {
+        float: right;
+    }
+
+
+    .Article {
+        float: left;
+        height: ;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+
+
+    .ProductSection p {
+        width: 59%;
+
+        float: right;
+    }
+
+    .ProductSection h1 {
+        width: 100%;
+
+        float: right;
+    }
+    
+    
+    .product1
+    {
+    order:3;     
+    }
+     .product2
+    {
+    order:2;     
+    }
+     .product3
+    {
+    order:1;     
+    }
+    
+    
+     .sectionArticle {
+        grid-template-columns: auto auto;
+
+        grid-template-areas:
+        "One Two"
+        "One Two"
+        "Three Two"
+        "Three Five"
+        "Three Five"
+        "Three Five"
+        "Six Six"
+        "Six Six";
+    }
+    .articleFourSolar {
+        display: none;
+    }
+   
+    .AsideProduct3  {
+
+   display: none;
+}
+    
+    
+    .AsideProduct1{
+         width: 40%;
+    }
+    .AsideProduct2{
+        width: 40%;
+        
+    }
+       .AsideProduct2 img{
+        width: 100%;
+        
+    }
+    
+    .AsideProduct1 img{
+        width: 100%;
+        
+    }
+    
+    
+    
+    
+    .EuAside1
+{
+    display: none;
+}
+
+.EuAside2
+{
+     padding: 10px;
+    width: 40%;
+}
+.EuAside3
+{
+     padding: 10px;
+    width: 40%;
+    
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+
+    body {
+        max-width: 100%;
+        font-size: 80%;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        float: right;
+        width: 10px;
+        ;
+    }
+
+
+    header {
+        text-align: left;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    header img {
+        display: none;
+        height: 0px;
+
+    }
+
+    header h1,
+    header h2 {
+        font-size: 100%;
+    }
+
+    .Reasons {
+        display: none;
+    }
+
+    .ReasonsT {
+        display: flex;
+    }
+
+
+    nav {
+        text-align: center;
+        display: none;
+        background-color: white;
+        width: 100%;
+        float: left;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    nav a {
+        display: block;
+        border-bottom: 1px solid #08DC39;
+        margin: 0;
+    }
+
+    nav li {
+        float: unset;
+        width: unset;
+        margin-bottom: 10px;
+    }
+
+    #toggle:checked + nav {
+        display: block;
+
+    }
+
+
+    .Videoplayer video {
+       display: none;
+
+    }
+
+
+    .ProductSection {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+
+
+
+    }
+
+    .ProductSection .figure {
+        float: left;
+        width: auto;
+
+    }
+
+    .ProductSection .figure .a {
+        text-align: center;
+    }
+
+    .ProductSection .figure .a {
+        float: right;
+    }
+
+
+    .Article {
+        float: left;
+        height: ;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+
+
+    .ProductSection p {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        float: left;
+
+    }
+
+    .ProductSection h1 {
+        width: 90%;
+
+        float: left;
+    }
+    
+    
+    
+    
+    
+    
+    
+   .sectionArticle {
+
+        grid-template-areas:
+        "Five Five Five Five"
+        "Five Five Five Five"
+        "Five Five Five Five"
+        "Three Three Three Three"
+        "Three Three Three Three"
+        "Three Three Three Three"
+        "Two Two Two Two"
+        "Two Two Two Two"
+        "Two Two Two Two"
+        "One One One One"
+        "One One One One"
+        "One One One One";
+    }
+    .articleSixSolar {
+        display: none;
+    }
+    .articleFourSolar {
+        display: none;
+    }
+   
+    .AsideProduct3  {
+
+   display: block;
+}
+    
+    
+    .AsideProduct1{
+         width: 100%;
+    }
+    .AsideProduct2{
+        width: 100%;
+        
+    }
+    .AsideProduct3{
+        width: 100%;
+    }
+     .AsideProduct1 img{
+        width: 80%;
+        float: right;
+    }
+       .AsideProduct2 img{
+        width: 80%;
+        float: right;
+    }
+     .AsideProduct3 img{
+        width: 80%;
+         float: right;
+        
+    }
+   
+    
+    
+    
+    
+    
+    
+        .EuAside1
+{
+   display: block;
+       padding: 0px;
+    width: 90%;
+     margin-left: auto;
+  margin-right: auto;
+}
+
+.EuAside2
+{
+  padding: 0px;
+    width: 90%;
+     margin-left: auto;
+  margin-right: auto;
+}
+.EuAside3
+{
+      padding: 0px;
+     
+    width: 90%;
+     margin-left: auto;
+  margin-right: auto;
+    
+    
+    
+}
+        .EuAside1 img
+{
+   display: block;
+     padding: 10px;
+    width: 90%;
+}
+
+.EuAside2 img
+{
+     padding: 10px;
+    width: 90%;
+}
+.EuAside3 img
+{
+     padding: 10px;
+    width: 90%;
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
