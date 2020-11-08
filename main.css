@@ -122,12 +122,11 @@ aside {
 
 
 
-.SolarGrid
-{
+.SolarGrid {
     width: 100%;
-    float: left;
-    
-   
+    height: 100%;
+
+
 }
 
 .sectionArticle {
@@ -193,7 +192,14 @@ aside {
 }
 
 
+.Products {
 
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    float: left;
+
+}
 
 .AsideProduct1 {
     padding-left: 1%;
@@ -210,13 +216,10 @@ aside {
 
 .AsideProduct3 {
     width: 30%;
-    float: right;
 
 }
 
-.Products {
-    width: 100%;
-}
+
 
 
 .AsideProduct1 img {
@@ -286,85 +289,79 @@ footer a {
 
 }
 
-table
-{
+table {
     border-collapse: collapse;
-   width: 60%
+    width: 80%;
 }
 
 
-table , th 
-{
- 
-    border: 1px solid black;  
-}
-td
-{
-      border: 1px dashed  red;
-     
+table,
+th {
+
+    border: 1px solid black;
 }
 
-tbody>tr>:nth-child(1){
- color:white;
- 
- text-align:center;
+td {
+    border: 1px dashed red;
+
+}
+
+tbody > tr > :nth-child(1) {
+    color: white;
+
+    text-align: center;
     background-color: black;
 }
 
 
 
-table.SolarInfo
-{
- margin-left: auto;
-  margin-right: auto;
+table.SolarInfo {
+    margin-left: auto;
+    margin-right: auto;
     float: left;
 }
 
-.EuAside1
-{
+.EuAside1 {
     padding: 10px;
-    width: 30%;
+    width: 10%;
+    background-image: linear-gradient(to top left, red, yellow);
 }
 
-.EuAside2
-{
-     padding: 10px;
-    width: 30%;
-}
-.EuAside3
-{
-     padding: 10px;
-    width: 30%;
-    
-    
-    
-     
-
- 
-}
-
-.EuAside1 img
-{
+.EuAside2 {
     padding: 10px;
-    width: 50%;
-    border-image:  linear-gradient(to bottom left, red, yellow);
+    width: 10%;
+    padding-top: 15vh;
+    background-image: linear-gradient(to bottom left, red, yellow);
 }
 
-.EuAside2 img
-{
-     padding: 10px;
-    width: 50%;
-    border-image:  linear-gradient(to bottom left, red, yellow);
-}
-.EuAside3 img
-{
-    
-     padding: 10px;
-    width: 50%;
-   border-image:  linear-gradient(to bottom left, red, yellow);
+.EuAside3 {
+    padding: 10px;
+    width: 10%;
+    padding-top: 15vh;
+    background-image: linear-gradient(to top left, red, yellow);
 }
 
- 
+.EuAside1 a img {
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+
+}
+
+.EuAside2 a img {
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+}
+
+.EuAside3 a img {
+
+
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+
+}
 
 
 
@@ -374,6 +371,113 @@ table.SolarInfo
 
 
 
+.ContactForm {
+    width: 70%;
+    float: left;
+}
+
+.Contact {
+
+    width: 90%;
+    height: 50vh;
+
+}
+
+
+.Contact fieldset {
+    padding: 30px;
+    padding-right: 90px;
+
+}
+
+
+.Contact input {
+    color: white;
+    background-image: linear-gradient(to bottom left, blue, red);
+    height: ;
+    width: 60%;
+    font-size: 2vh;
+    margin: 10px;
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to bottom left, red, yellow);
+    color: white;
+
+}
+
+.Contact textarea {
+    color: white;
+    background-image: linear-gradient(to bottom left, blue, red);
+    height: 10vh;
+    width: 60%;
+    font-size: 2vh;
+    margin: 10px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.information h1 {
+    text-align: center;
+}
+
+
+
+.information p {
+    text-align: center;
+}
+
+
+.information {
+    width: 100%;
+    float: inherit;
+}
+
+
+
+.Products_contact {
+    padding-top: 15vh;
+    width: 30%;
+    float: left;
+}
+
+
+
+.Product1Contact {
+    float: left;
+    width: 100%;
+
+
+}
+
+.Product2Contact {
+    float: left;
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.Product3Contact {
+    float: left;
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.Product1Contact img {
+
+    width: 50%;
+}
+
+.Product2Contact img {
+
+    width: 50%;
+}
+
+.Product3Contact img {
+
+    width: 50%;
+}
 
 @media only screen and (max-width: 1180px) {
 
@@ -467,83 +571,141 @@ table.SolarInfo
 
         float: right;
     }
-    
-    
-    .product1
-    {
-    order:3;     
+
+
+    .product1 {
+        order: 3;
     }
-     .product2
-    {
-    order:2;     
+
+    .product2 {
+        order: 2;
     }
-     .product3
-    {
-    order:1;     
+
+    .product3 {
+        order: 1;
     }
-    
-    
-     .sectionArticle {
+
+
+    .sectionArticle {
         grid-template-columns: auto auto;
 
         grid-template-areas:
-        "One Two"
-        "One Two"
-        "Three Two"
-        "Three Five"
-        "Three Five"
-        "Three Five"
-        "Six Six"
-        "Six Six";
+            "One Two"
+            "One Two"
+            "Three Two"
+            "Three Five"
+            "Three Five"
+            "Three Five"
+            "Six Six"
+            "Six Six";
     }
+
     .articleFourSolar {
         display: none;
     }
-   
-    .AsideProduct3  {
 
-   display: none;
-}
-    
-    
-    .AsideProduct1{
-         width: 40%;
+    .AsideProduct3 {
+
+        display: none;
     }
-    .AsideProduct2{
+
+
+    .AsideProduct1 {
         width: 40%;
-        
     }
-       .AsideProduct2 img{
-        width: 100%;
-        
-    }
-    
-    .AsideProduct1 img{
-        width: 100%;
-        
-    }
-    
-    
-    
-    
-    .EuAside1
-{
-    display: none;
-}
 
-.EuAside2
-{
-     padding: 10px;
-    width: 40%;
-}
-.EuAside3
-{
-     padding: 10px;
-    width: 40%;
-    
-    
-}
+    .AsideProduct2 {
+        width: 40%;
 
+    }
+
+    .AsideProduct2 img {
+        width: 100%;
+
+    }
+
+    .AsideProduct1 img {
+        width: 100%;
+
+    }
+
+
+
+
+    .EuAside1 {
+        display: none;
+    }
+
+    .EuAside2 {
+        padding: 10px;
+        width: 40%;
+    }
+
+    .EuAside3 {
+        padding: 10px;
+        width: 40%;
+
+
+    }
+
+
+
+
+
+
+
+    .ContactForm {
+        width: 30%;
+
+    }
+
+
+
+
+    
+    .Products_contact {
+        padding-top:0vh;
+        width: 30%;
+        float: left;
+    }
+
+
+
+    .Product1Contact {
+        float: left;
+        width: 100%;
+
+
+    }
+
+    .Product2Contact {
+        float: left;
+        width: 100%;
+        padding-top: 15vh;
+    }
+
+    .Product3Contact {
+        float: left;
+        width: 100%;
+        padding-top: 15vh;
+    }
+
+    .Product1Contact img {
+
+        width: 50%;
+    }
+
+    .Product2Contact img {
+
+        width: 50%;
+    }
+
+    .Product3Contact img {
+
+        width: 50%;
+    }
+
+}
 
 @media only screen and (max-width: 480px) {
 
@@ -620,7 +782,7 @@ table.SolarInfo
 
 
     .Videoplayer video {
-       display: none;
+        display: none;
 
     }
 
@@ -673,135 +835,162 @@ table.SolarInfo
 
         float: left;
     }
-    
-    
-    
-    
-    
-    
-    
-   .sectionArticle {
+
+    .SolarGrid {
+        float: left;
+    }
+
+
+
+
+
+    .sectionArticle {
 
         grid-template-areas:
-        "Five Five Five Five"
-        "Five Five Five Five"
-        "Five Five Five Five"
-        "Three Three Three Three"
-        "Three Three Three Three"
-        "Three Three Three Three"
-        "Two Two Two Two"
-        "Two Two Two Two"
-        "Two Two Two Two"
-        "One One One One"
-        "One One One One"
-        "One One One One";
+            "Five Five Five Five"
+            "Five Five Five Five"
+            "Five Five Five Five"
+            "Three Three Three Three"
+            "Three Three Three Three"
+            "Three Three Three Three"
+            "Two Two Two Two"
+            "Two Two Two Two"
+            "Two Two Two Two"
+            "One One One One"
+            "One One One One"
+            "One One One One";
     }
+
     .articleSixSolar {
         display: none;
     }
+
     .articleFourSolar {
         display: none;
     }
-   
-    .AsideProduct3  {
 
-   display: block;
-}
-    
-    
-    .AsideProduct1{
-         width: 100%;
+    .AsideProduct3 {
+
+        display: block;
     }
-    .AsideProduct2{
-        width: 100%;
-        
-    }
-    .AsideProduct3{
+
+
+    .AsideProduct1 {
         width: 100%;
     }
-     .AsideProduct1 img{
+
+    .AsideProduct2 {
+        width: 100%;
+
+    }
+
+    .AsideProduct3 {
+        width: 100%;
+    }
+
+    .AsideProduct1 img {
         width: 80%;
         float: right;
     }
-       .AsideProduct2 img{
+
+    .AsideProduct2 img {
         width: 80%;
         float: right;
     }
-     .AsideProduct3 img{
+
+    .AsideProduct3 img {
         width: 80%;
-         float: right;
-        
+        float: right;
+
     }
-   
-    
-    
-    
-    
-    
-    
-        .EuAside1
-{
-   display: block;
-       padding: 0px;
-    width: 90%;
-     margin-left: auto;
-  margin-right: auto;
-}
 
-.EuAside2
-{
-  padding: 0px;
-    width: 90%;
-     margin-left: auto;
-  margin-right: auto;
-}
-.EuAside3
-{
-      padding: 0px;
-     
-    width: 90%;
-     margin-left: auto;
-  margin-right: auto;
-    
-    
-    
-}
-        .EuAside1 img
-{
-   display: block;
-     padding: 10px;
-    width: 90%;
-}
 
-.EuAside2 img
-{
-     padding: 10px;
-    width: 90%;
-}
-.EuAside3 img
-{
-     padding: 10px;
-    width: 90%;
-    
-    
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+    .EuAside1 {
+        display: block;
+        padding: 0px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .EuAside2 {
+        display: block;
+        padding: 0px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .EuAside3 {
+        display: block;
+        padding: 0px;
+        margin-top: 30px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .EuAside1 img {
+        display: block;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .EuAside2 a img {
+        padding: 10px;
+        width: 90%;
+        height: 50%;
+    }
+
+    .EuAside3 img {
+        padding: 10px;
+        width: 90%;
+
+
+    }
+
+
+
+    .ContactForm {
+        width: 100%;
+    }
+
+
+
+
+    .Product1Contact {
+
+        width: 100%;
+    }
+
+    .Product2Contact {
+
+        width: 100%;
+    }
+
+    .Product3Contact {
+
+        width: 100%;
+    }
+
+
+.Products_contact {
+        padding-top:0vh;
+        width: 100%;
+        float: left;
+    }
+
+
+
+
+
+
 }
